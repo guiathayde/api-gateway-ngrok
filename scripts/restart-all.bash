@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-cd "$SCRIPT_DIR/.."
 
+cd "$SCRIPT_DIR/.."
 docker stop api-gateway
 docker rm api-gateway
 docker build -t api-gateway .
